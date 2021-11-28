@@ -40,7 +40,7 @@ body {
   transform: translateX(-50%);
   display: none;
 }
-h1,
+
 #timer {
   position: fixed;
   top: 50%;
