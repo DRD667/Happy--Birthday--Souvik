@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body {
+  background: violet;
+  color: white;
+  overflow: hidden;
+  animation: bgcolor 7s linear infinite alternate;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 2rem 0;
+}
+
+#timer {
+  display: none;
+  line-height: 2;
+  font-size: 2em;
+  text-align: left;
+}
+
+.sen {
+  font-size: 3em;
+  text-align: center;
+  margin-top: 3rem;
+  display: none;
+}
+h1,
+#timer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  animation: fadeAway 5s infinite alternate;
+  cursor: pointer;
+  text-align: center;
+}
+
+.souvik {
+  color: yellow;
+}
+
+@keyframes fadeAway {
+  25% {
+    transform: translate(-100%, 20%);
+  }
+  50% {
+    transform: translate(-30%, 100%);
+  }
+
+  65% {
+    top: 0;
+  }
+
+  80% {
+    bottom: 20%;
+  }
+
+  75% {
+    transform: translate(-50%, 100%);
+  }
+
+  85% {
+    transform: translate(25%, 25%);
+  }
+}
+
+@keyframes bgcolor {
+  14% {
+    background-color: red;
+  }
+
+  28% {
+    background-color: deeppink;
+  }
+
+  42% {
+    background-color: brown;
+  }
+
+  84% {
+    background-color: black;
+  }
+
+  100% {
+    background-color: red;
+  }
+}
+
+.bg {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  opacity: 0.2;
+}
