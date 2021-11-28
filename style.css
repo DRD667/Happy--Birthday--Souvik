@@ -27,6 +27,17 @@ body {
   margin-top: 3rem;
   display: none;
 }
+
+.senb {
+  font-size: 3em;
+  text-align: center;
+  color: yellow;
+  font-weight: bold;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+}
 h1,
 #timer {
   position: fixed;
