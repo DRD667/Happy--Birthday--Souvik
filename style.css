@@ -12,6 +12,7 @@ body {
   animation: bgcolor 7s linear infinite alternate;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding: 2rem 0;
+  overflow: hidden;
 }
 
 #timer {
@@ -37,6 +38,7 @@ body {
   bottom: 10%;
   left: 50%;
   transform: translateX(-50%);
+  display: none;
 }
 h1,
 #timer {
