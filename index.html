@@ -13,15 +13,15 @@
     <p class="senb"></p>
     <div id="timer"></div>
     <div class="bg">
-      <video src="bg.mp4" defaultMuted autoplay loop playsinline></video>
+      <video src="bg.mp4" defaultMuted loop playsinline class="drop2"></video>
     </div>
-    <!-- <video
+    <video
       src="Confetti - 82767.mp4"
       preload
       defaultMuted
       class="drop"
       playsinline
-    ></video> -->
+    ></video>
 
     <h1 class="wish" onclick="removeWish()">
       HAPPY BIRTHDAY <br />
@@ -34,8 +34,11 @@
         let senb = document.getElementsByClassName("senb")[0];
         let timer = document.getElementById("timer");
         let drop = document.getElementsByClassName("drop")[0];
+        let drop2 = document.getElementsByClassName("drop2")[0];
         drop.autoplay = "true";
         drop.load();
+        drop2.autoplay = "true";
+        drop2.load();
         wish.style.color = "Red";
         wish.style.display = "none";
         sen.style.display = "block";
