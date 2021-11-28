@@ -15,6 +15,8 @@
     <div class="bg">
       <video src="bg.mp4" preload defaultMuted autoplay loop></video>
     </div>
+    <video src="Confetti - 82767.mp4" preload defaultMuted class="drop"></video>
+
     <h1 class="wish" onclick="removeWish()">
       HAPPY BIRTHDAY <br />
       <span class="souvik"> SOUVIK</span>
@@ -25,6 +27,9 @@
         let sen = document.getElementsByClassName("sen")[0];
         let senb = document.getElementsByClassName("senb")[0];
         let timer = document.getElementById("timer");
+        let drop = document.getElementsByClassName("drop")[0];
+        drop.autoplay = "true";
+        drop.load();
         wish.style.color = "Red";
         wish.style.display = "none";
         sen.style.display = "block";
